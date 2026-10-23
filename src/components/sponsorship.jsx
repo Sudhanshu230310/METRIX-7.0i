@@ -74,7 +74,10 @@ const tiers = [
 export default function Sponsorship() {
   return (
     <>
-      <div className="min-h-screen">
+      <div className="h-screen flex justify-center items-center text-3xl text-center font-semibold">
+        <span className="text-red-600 pr-2">To</span> Be Announced....
+      </div>
+      {/* <div className="min-h-screen">
         <div className="flex justify-center text-4xl font-serif pt-10 lg:text-5xl">
           <span className="text-red-600">Spo</span>nsorship
         </div>
@@ -122,10 +125,10 @@ export default function Sponsorship() {
           <p className="py-8 text-muted-foreground max-w-2xl mx-auto text-base leading-relaxed">
             Choose from our diverse sponsorship options crafted to suit organizations big and small. Partner with us and play a key role in this innovative event.
           </p>
-        </motion.div>
+        </motion.div> */}
 
-        {/* Tier Cards */}
-        <div className="grid cursor-pointer gap-8 mx-10 pb-10 md:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3">
+      {/* Tier Cards */}
+      {/* <div className="grid cursor-pointer gap-8 mx-10 pb-10 md:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3">
           {tiers.map((tier, index) => (
             <motion.div
               key={tier.title}
@@ -140,7 +143,7 @@ export default function Sponsorship() {
           ))}
         </div>
       </div>
-      <div className="flex justify-center pb-10 px-4 text-2xl font-serif "> <div className="text-red-600 pr-2 font-semibold"> Note</div>: Exhibition booth(s) can be booked by sponsors/ non-sponsors by paying Rs. 50,000 only </div>
+      <div className="flex justify-center pb-10 px-4 text-2xl font-serif "> <div className="text-red-600 pr-2 font-semibold"> Note</div>: Exhibition booth(s) can be booked by sponsors/ non-sponsors by paying Rs. 50,000 only </div> */}
     </>
   );
 }

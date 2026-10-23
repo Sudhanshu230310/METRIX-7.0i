@@ -3,16 +3,19 @@ import { motion } from "framer-motion";
 export default function Abstract() {
   return (
     <>
-      <div className="pb-10">
+      <div className="h-screen flex justify-center items-center text-3xl text-center font-semibold">
+        <span className="text-red-600 pr-2">To</span> Be Announced....
+      </div>
+      {/* <div className="pb-10">
         <div className="flex justify-center text-4xl lg:text-5xl font-serif pt-12">
           <span className="text-red-600">A</span>bstract
-        </div>
+        </div> */}
 
-        {/* 3 Cards Section */}
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 pt-16 gap-8 xl:px-20 px-10">
-          
-          {/* Awards Card */}
-          <div className="hover:scale-105 cursor-pointer hover:-translate-y-2 transition-all duration-200 border border-gray-400 rounded-2xl bg-white min-h-96 px-8 pb-8">
+      {/* 3 Cards Section */}
+      {/* <div className="grid lg:grid-cols-3 md:grid-cols-2 pt-16 gap-8 xl:px-20 px-10"> */}
+
+      {/* Awards Card */}
+      {/* <div className="hover:scale-105 cursor-pointer hover:-translate-y-2 transition-all duration-200 border border-gray-400 rounded-2xl bg-white min-h-96 px-8 pb-8">
             <div className="flex justify-center text-3xl py-4">
               <span className="text-red-600">A</span>wards
             </div>
@@ -29,10 +32,10 @@ export default function Abstract() {
               <div>* Oral/Poster Award</div>
               <div>* Technology Award</div>
             </div>
-          </div>
+          </div> */}
 
-          {/* Call for Abstracts Card */}
-          <div className="hover:scale-105 cursor-pointer hover:-translate-y-2 transition-all duration-200 border border-gray-400 rounded-2xl bg-white min-h-96 px-8 pb-8">
+      {/* Call for Abstracts Card */}
+      {/* <div className="hover:scale-105 cursor-pointer hover:-translate-y-2 transition-all duration-200 border border-gray-400 rounded-2xl bg-white min-h-96 px-8 pb-8">
             <div className="flex justify-center text-3xl py-4">
               <span className="text-red-600 pr-2">Call</span> for Abstracts
             </div>
@@ -53,10 +56,10 @@ export default function Abstract() {
                 Click here to Submit Abstract
               </a>
             </div>
-          </div>
+          </div> */}
 
-          {/* Apply Now Card */}
-          <div className="hover:scale-105 cursor-pointer hover:-translate-y-2 transition-all duration-200 border border-gray-400 rounded-2xl bg-white min-h-96 px-8 pb-8">
+      {/* Apply Now Card */}
+      {/* <div className="hover:scale-105 cursor-pointer hover:-translate-y-2 transition-all duration-200 border border-gray-400 rounded-2xl bg-white min-h-96 px-8 pb-8">
             <div className="flex justify-center text-3xl py-4">
               <span className="text-red-600">App</span>ly Now!
             </div>
@@ -73,13 +76,13 @@ export default function Abstract() {
             </div>
           </div>
 
-        </div>
+        </div> */}
 
-        {/* ========================= */}
-        {/* TABLE SECTION ADDED HERE */}
-        {/* ========================= */}
+      {/* ========================= */}
+      {/* TABLE SECTION ADDED HERE */}
+      {/* ========================= */}
 
-        <div className="mt-20 px-10 xl:px-20">
+      {/* <div className="mt-20 px-10 xl:px-20">
           <h2 className="text-4xl font-serif text-center mb-10">
             <span className="text-red-600">Conference</span> Themes & Workshops
           </h2>
@@ -140,7 +143,7 @@ export default function Abstract() {
           </div>
         </div>
 
-      </div>
+      </div> */}
     </>
   );
 }

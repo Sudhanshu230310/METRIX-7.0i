@@ -1128,113 +1128,119 @@ const speakers = {
       image: Shalini,
       category: "National",
     },
-    
+
   ],
 }
 
 export default function Speakers() {
-  const [hovered, setHovered] = useState(null)
 
-  return (
-    <main className="min-h-screen bg-gradient-to-b from-white to-slate-50 text-slate-800 selection:bg-indigo-200/60">
-
-      <header className="text-center pt-20 pb-10">
-          <span className="text-4xl lg:text-5xl font-serif">
-            <span className="text-red-600">Spe</span>akers
-          </span>
-      </header>
-      <p
-          className="text-lg text-muted-foreground max-w-2xl mx-auto animate-fade-in-up pb-10"
-          style={{ animationDelay: "0.2s" }}
-        >
-          Meet the distinguished leaders and experts guiding Bio-MANTHAN, a
-          premier biomedicine research symposium at IIT Ropar
-        </p>
-
-      <style jsx>{`
-        @keyframes fadeInUp {
-          from { opacity: 0; transform: translateY(25px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
-      `}</style>
-
-      <div className="container mx-auto px-6 pb-24">
-        <Section title="Plenary Speakers" gradient="from-indigo-600 to-blue-500">
-          <Grid list={speakers.plenary} hovered={hovered} setHovered={setHovered} />
-        </Section>
-
-        <Section title="International Speakers" gradient="from-purple-500 to-pink-500">
-          <Grid list={speakers.international} hovered={hovered} setHovered={setHovered} small />
-        </Section>
-
-        <Section title="National Speakers" gradient="from-orange-500 to-red-500">
-          <Grid list={speakers.national} hovered={hovered} setHovered={setHovered} tiny />
-        </Section>
-      </div>
-    </main>
-  )
-}
-
-function Section({ title, gradient, children }) {
-  return (
-    <section className="mb-24 text-center">
-      <h2 className={`text-3xl font-bold`}>
-        {title}
-      </h2>
-      <div className="mx-auto w-28 h-[3px] rounded-full bg-gradient-to-r from-transparent via-slate-400/60 to-transparent my-6" />
-      {children}
-    </section>
-  )
-}
-
-function Grid({ list, hovered, setHovered, small, tiny }) {
-  return (
-    <div className={`border py-10 px-10 rounded-2xl grid gap-6 ${tiny ? "md:grid-cols-4" : small ? "md:grid-cols-4" : "md:grid-cols-3"}`}>
-      {list.map((sp, i) => (
-        <Card
-          key={i}
-          speaker={sp}
-          index={i}
-          active={hovered === i}
-          setHovered={setHovered}
-          delay={i * 0.1}
-          size={tiny ? "tiny" : small ? "small" : "default"}
-        />
-      ))}
+  return <>
+    <div className="h-screen flex justify-center items-center text-3xl text-center font-semibold">
+      <span className="text-red-600 pr-2">To</span> Be Announced....
     </div>
-  )
-}
+  </>
+  //   const [hovered, setHovered] = useState(null)
 
-function Card({ speaker, index, active, setHovered, delay, size }) {
-  const pad = size === "tiny" ? "p-3" : size === "small" ? "p-4" : "p-6"
-  const img = size === "tiny" ? "w-28 h-28" : size === "small" ? "w-32 h-32" : "w-40 h-40"
+  //   return (
+  //     <main className="min-h-screen bg-gradient-to-b from-white to-slate-50 text-slate-800 selection:bg-indigo-200/60">
 
-  return (
-    <div
-      style={{ animation: `fadeInUp .55s ease-out ${delay}s both` }}
-      className="border my-2 border-gray-400 mx-2  rounded-2xl group cursor-pointer"
-      onMouseEnter={() => setHovered(index)}
-      onMouseLeave={() => setHovered(null)}
-    >
-      <div className={`rounded-2xl ${pad} border border-slate-200 bg-white/80 backdrop-blur-lg shadow-sm transition-all duration-500 hover:shadow-lg hover:-translate-y-1 ${active ? "shadow-indigo-400/30 scale-[1.04]" : ""}`}>
+  //       <header className="text-center pt-20 pb-10">
+  //           <span className="text-4xl lg:text-5xl font-serif">
+  //             <span className="text-red-600">Spe</span>akers
+  //           </span>
+  //       </header>
+  //       <p
+  //           className="text-lg text-muted-foreground max-w-2xl mx-auto animate-fade-in-up pb-10"
+  //           style={{ animationDelay: "0.2s" }}
+  //         >
+  //           Meet the distinguished leaders and experts guiding Bio-MANTHAN, a
+  //           premier biomedicine research symposium at IIT Ropar
+  //         </p>
 
-        <div className={`relative ${img} mx-auto mb-4`}>
-          <div className="absolute inset-0 rounded-full bg-gradient-to-r from-indigo-300 to-pink-300 blur-lg opacity-0 group-hover:opacity-70 transition duration-500"></div>
-          <img src={speaker.image} alt={speaker.name} className="rounded-full w-full h-full object-cover border border-slate-200 group-hover:border-slate-300 transition-all group-hover:scale-105" />
-        </div>
+  //       <style jsx>{`
+  //         @keyframes fadeInUp {
+  //           from { opacity: 0; transform: translateY(25px); }
+  //           to { opacity: 1; transform: translateY(0); }
+  //         }
+  //       `}</style>
 
-        <h3 className="font-semibold text-slate-800 text-lg mb-1 group-hover:text-indigo-600 transition-all">
-          {speaker.name}
-        </h3>
+  //       <div className="container mx-auto px-6 pb-24">
+  //         <Section title="Plenary Speakers" gradient="from-indigo-600 to-blue-500">
+  //           <Grid list={speakers.plenary} hovered={hovered} setHovered={setHovered} />
+  //         </Section>
 
-        <p className="text-sm text-slate-500 mb-1">
-          {speaker.title}
-        </p>
+  //         <Section title="International Speakers" gradient="from-purple-500 to-pink-500">
+  //           <Grid list={speakers.international} hovered={hovered} setHovered={setHovered} small />
+  //         </Section>
 
-        <p className="text-xs text-slate-400 group-hover:text-slate-600 transition-all line-clamp-2">
-          {speaker.affiliation}
-        </p>
-      </div>
-    </div>
-  )
+  //         <Section title="National Speakers" gradient="from-orange-500 to-red-500">
+  //           <Grid list={speakers.national} hovered={hovered} setHovered={setHovered} tiny />
+  //         </Section>
+  //       </div>
+  //     </main>
+  //   )
+  // }
+
+  // function Section({ title, gradient, children }) {
+  //   return (
+  //     <section className="mb-24 text-center">
+  //       <h2 className={`text-3xl font-bold`}>
+  //         {title}
+  //       </h2>
+  //       <div className="mx-auto w-28 h-[3px] rounded-full bg-gradient-to-r from-transparent via-slate-400/60 to-transparent my-6" />
+  //       {children}
+  //     </section>
+  //   )
+  // }
+
+  // function Grid({ list, hovered, setHovered, small, tiny }) {
+  //   return (
+  //     <div className={`border py-10 px-10 rounded-2xl grid gap-6 ${tiny ? "md:grid-cols-4" : small ? "md:grid-cols-4" : "md:grid-cols-3"}`}>
+  //       {list.map((sp, i) => (
+  //         <Card
+  //           key={i}
+  //           speaker={sp}
+  //           index={i}
+  //           active={hovered === i}
+  //           setHovered={setHovered}
+  //           delay={i * 0.1}
+  //           size={tiny ? "tiny" : small ? "small" : "default"}
+  //         />
+  //       ))}
+  //     </div>
+  //   )
+  // }
+
+  // function Card({ speaker, index, active, setHovered, delay, size }) {
+  //   const pad = size === "tiny" ? "p-3" : size === "small" ? "p-4" : "p-6"
+  //   const img = size === "tiny" ? "w-28 h-28" : size === "small" ? "w-32 h-32" : "w-40 h-40"
+
+  //   return (
+  //     <div
+  //       style={{ animation: `fadeInUp .55s ease-out ${delay}s both` }}
+  //       className="border my-2 border-gray-400 mx-2  rounded-2xl group cursor-pointer"
+  //       onMouseEnter={() => setHovered(index)}
+  //       onMouseLeave={() => setHovered(null)}
+  //     >
+  //       <div className={`rounded-2xl ${pad} border border-slate-200 bg-white/80 backdrop-blur-lg shadow-sm transition-all duration-500 hover:shadow-lg hover:-translate-y-1 ${active ? "shadow-indigo-400/30 scale-[1.04]" : ""}`}>
+
+  //         <div className={`relative ${img} mx-auto mb-4`}>
+  //           <div className="absolute inset-0 rounded-full bg-gradient-to-r from-indigo-300 to-pink-300 blur-lg opacity-0 group-hover:opacity-70 transition duration-500"></div>
+  //           <img src={speaker.image} alt={speaker.name} className="rounded-full w-full h-full object-cover border border-slate-200 group-hover:border-slate-300 transition-all group-hover:scale-105" />
+  //         </div>
+
+  //         <h3 className="font-semibold text-slate-800 text-lg mb-1 group-hover:text-indigo-600 transition-all">
+  //           {speaker.name}
+  //         </h3>
+
+  //         <p className="text-sm text-slate-500 mb-1">
+  //           {speaker.title}
+  //         </p>
+
+  //         <p className="text-xs text-slate-400 group-hover:text-slate-600 transition-all line-clamp-2">
+  //           {speaker.affiliation}
+  //         </p>
+  //       </div>
+  //     </div>
+  //   )
 }

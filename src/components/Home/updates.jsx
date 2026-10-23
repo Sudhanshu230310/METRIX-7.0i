@@ -8,23 +8,23 @@ const marqueeData = [
 
     {
         text: "📄 Announced: Revised Discounted Registration Charges & Packages",
-        link: 'https://drive.google.com/file/d/1LEjPegDNrkFHOj5td8Frlth1-rd0CsSk/view',
+        // link: 'https://drive.google.com/file/d/1LEjPegDNrkFHOj5td8Frlth1-rd0CsSk/view',
     },
     {
         text: "📝 Abstract (Offline)",
-        link: 'https://docs.google.com/forms/d/e/1FAIpQLScKrOOlkOrjsHshGfdogDvIaYP-fLNsObDgqRKO-SahDwu78Q/viewform',
+        // link: 'https://docs.google.com/forms/d/e/1FAIpQLScKrOOlkOrjsHshGfdogDvIaYP-fLNsObDgqRKO-SahDwu78Q/viewform',
     },
     {
         text: "📝 (Online)",
-        link: 'https://docs.google.com/forms/d/e/1FAIpQLSf7ovkrs4-uP8cbwDxvo0jKvDjMw0AUdWMA9gOEqW_azohy3w/viewform',
+        // link: 'https://docs.google.com/forms/d/e/1FAIpQLSf7ovkrs4-uP8cbwDxvo0jKvDjMw0AUdWMA9gOEqW_azohy3w/viewform',
     },
     {
         text: "📊 Registration",
-        link: 'https://sites.google.com/iitrpr.ac.in/biomanthan/registration',
+        // link: 'https://sites.google.com/iitrpr.ac.in/biomanthan/registration',
     },
     {
         text: "📄 Brochure",
-        link: 'https://drive.google.com/file/d/1zrKp_3EkxiwVZ5HYezpAZk84GlgnWH8L/view',
+        // link: 'https://drive.google.com/file/d/1zrKp_3EkxiwVZ5HYezpAZk84GlgnWH8L/view',
     },
 
 ]

@@ -26,7 +26,7 @@ function CommitteeMember({ name, title, subtitle, highlight, image }) {
       <div className="relative z-10">
         <div className="h-96 flex justify-center">
           <img
-            className="rounded-full w-72 h-72 mb-4 object-contain overflow-hidden"
+            className="rounded-full w-72 h-72 mb-4 object-cover overflow-hidden"
             src={image}
             alt=""
           />
@@ -101,7 +101,12 @@ function CommitteeHeader() {
 
 const patrons = [
   // { name: "Prof. Rajeev Ahuja", title: "Director, IIT Ropar", image: rajeev },
-  { name: "Prof. Navin Kumar", title: "HOD ME Department", image: navin },
+  {
+    name: "Prof. Navin Kumar",
+    title: "HOD ME Department",
+    subtitle: "IIT Ropar",
+    image: navin
+  },
   {
     name: "Prof. Dhiraj Kumar Mahajan",
     title: "ME Department",
