@@ -181,48 +181,10 @@ const HARDCODED_EVENTS = [
     description: "Conference dinner",
     location: "Rose Garden",
   },
-
-  // December 7, 2025 - Day 4
-  {
-    id: "conf-16",
-    title: "Wellness Activity - Yoga",
-    date: new Date(2025, 11, 7),
-    time: "06:45",
-    category: "conference",
-    description: "Yoga Practice & Motivational Address",
-    location: "Auditorium Foyer Area",
-  },
-  {
-    id: "conf-17",
-    title: "Final Plenary Sessions",
-    date: new Date(2025, 11, 7),
-    time: "09:00",
-    category: "meeting",
-    description: "Dr. Prashant N. Kumta, Prof. Roger Jagdish Narayan, Prof. Ashutosh Khandha",
-    location: "Senate Hall",
-  },
-  {
-    id: "conf-18",
-    title: "Parallel Sessions - Final Day",
-    date: new Date(2025, 11, 7),
-    time: "10:20",
-    category: "conference",
-    description: "Last set of keynote presentations and invited lectures",
-    location: "LHC-M3, LHC-M4, LHC-M5, LHC-M6",
-  },
-  {
-    id: "conf-19",
-    title: "Valedictory Session",
-    date: new Date(2025, 11, 7),
-    time: "14:00",
-    category: "meeting",
-    description: "Thanksgiving, Awards Distribution & Ceremony",
-    location: "Auditorium",
-  },
 ]
 
 export function EventCalendar() {
-  const [selectedDate, setSelectedDate] = useState(new Date(2025, 11, 4))
+  const [selectedDate, setSelectedDate] = useState(new Date(2026, 12, 3))
   const [events] = useState(HARDCODED_EVENTS)
 
   const selectedDateEvents = events.filter(
@@ -271,8 +233,8 @@ export function EventCalendar() {
       style={{ display: "flex", flexDirection: "column", gap: "48px", padding: "48px 100px" }}
     >
       <div className="text-5xl flex justify-center font-serif">
-        <span className="text-orange-600">Bio</span>-<span className="text-black">मंथन</span>{" "}
-        <span className="text-black">2025</span>
+        <span className="text-orange-600">METRIX</span><span className="text-black pr-4"></span>{" "}
+        <span className="text-black">2026</span>
       </div>
       <div
         className="bg-gradient-to-br from-white to-blue-300"

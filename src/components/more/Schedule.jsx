@@ -48,11 +48,10 @@ export default function ConferenceSchedule() {
   const TabsTrigger = ({ value, children, isActive }) => (
     <button
       onClick={() => setActiveTab(value)}
-      className={`px-4 py-2 rounded-md font-semibold transition-all ${
-        isActive
-          ? "bg-red-500 text-white"
-          : "bg-gray-100 text-gray-700 hover:bg-gray-200"
-      }`}
+      className={`px-4 py-2 rounded-md font-semibold transition-all ${isActive
+        ? "bg-red-500 text-white"
+        : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+        }`}
     >
       {children}
     </button>
@@ -396,193 +395,6 @@ export default function ConferenceSchedule() {
     },
   ];
 
-  const scheduleDay4 = [
-    {
-      time: "06:45 - 07:30",
-      title: "Wellness Activity: Yoga Practice & Motivational Address",
-      venue: "Auditorium Foyer Area",
-    },
-    {
-      time: "08:30 - Onwards",
-      title: "Registration & Help Desk",
-      venue: "S. Radhakrishnan Complex (LHC) Foyer Area",
-    },
-    {
-      time: "09:00 - 10:00",
-      title: "Plenary Sessions",
-      speakers:
-        "Dr. Prashant N. Kumta (University of Pittsburgh), Prof. Roger Jagdish Narayan (NC State University), Prof. Ashutosh Khandha (University of Delaware)",
-      venue: "Senate Hall",
-    },
-    {
-      time: "10:00 - 10:20",
-      title: "High-Tea",
-      venue: "Rose Garden",
-    },
-    {
-      time: "10:20 - 11:30",
-      title: "Parallel Session I - Biomaterials & 3D Bioprinting",
-      theme: "Theme 1",
-      speakers:
-        "Dr. Jayanta Bhattacharyya (IIT Delhi), Dr. Arnab Chanda (IIT Delhi)",
-      venue: "LHC-M3",
-    },
-    {
-      time: "10:20 - 11:30",
-      title: "Parallel Session II - Cell Biology & Tissue Engineering",
-      theme: "Theme 2",
-      venue: "LHC-M4",
-    },
-    {
-      time: "10:20 - 11:30",
-      title: "Parallel Session III - Biomedical Implants & Biomechanics",
-      theme: "Theme 3",
-      speakers: "Prof. Vishal Kumar (PGIMER Chandigarh)",
-      venue: "LHC-M5",
-    },
-    {
-      time: "10:20 - 11:30",
-      title:
-        "Parallel Session IV - Pharmaceuticals, Therapeutics & AI-Healthcare",
-      theme: "Theme 4",
-      speakers:
-        "Dr. J. Satya Eswari (NIT Raipur), Dr. Sharan Mallya P (AIIMS Guwahati)",
-      venue: "LHC-M6",
-    },
-    {
-      time: "11:30 - 13:00",
-      title: "Oral Presentations (4 Sessions)",
-      venue: "Multiple Venues",
-    },
-    {
-      time: "12:00 - 13:00",
-      title:
-        "Oral Presentation for MAHE Young Scientist & Bajpai-Saha Student Awards",
-      venue: "Multiple Venues",
-    },
-    {
-      time: "13:00 - 14:00",
-      title: "Lunch",
-      venue: "Rose Garden",
-    },
-    {
-      time: "14:00 - Onwards",
-      title: "Valedictory Session - Thanksgiving, Awards Distribution",
-      venue: "Auditorium",
-    },
-  ];
-
-  const scheduleDetailDay1 = [
-    {
-      time: "01:45 - 01:50 PM",
-      title: "Arrival & Seating of Dignitaries",
-      duration: "5 min",
-      venue: "Auditorium",
-    },
-    {
-      time: "01:50 - 01:55 PM",
-      title: "Ceremonial Lamp Lighting",
-      duration: "5 min",
-      venue: "Auditorium",
-    },
-    {
-      time: "01:55 - 01:58 PM",
-      title: "Conference Video",
-      duration: "3 min",
-      venue: "Auditorium",
-    },
-    {
-      time: "01:58 - 02:03 PM",
-      title: "Opening Remarks and Report by Convenor - Prof. Navin Kumar",
-      duration: "5 min",
-      venue: "Auditorium",
-    },
-    {
-      time: "02:03 - 02:08 PM",
-      title: "Address by Founder, SBAOI & STERMI - Prof. C.P. Sharma",
-      duration: "5 min",
-      venue: "Auditorium",
-    },
-    {
-      time: "02:08 - 02:15 PM",
-      title: "Address by SBAOI President - Prof. Ashok Kumar",
-      duration: "7 min",
-      venue: "Auditorium",
-    },
-    {
-      time: "02:15 - 02:20 PM",
-      title: "Address by STERMI President - Prof. Dhirendra S. Katti",
-      duration: "5 min",
-      venue: "Auditorium",
-    },
-    {
-      time: "02:20 - 02:35 PM",
-      title: "Address by Director - Prof. Rajeev Ahuja (Director, IIT Ropar)",
-      duration: "15 min",
-      venue: "Auditorium",
-    },
-    {
-      time: "02:35 - 02:50 PM",
-      title: "Address by Guest of Honour - Prof. Meenu Singh",
-      duration: "15 min",
-      venue: "Auditorium",
-    },
-    {
-      time: "02:50 - 03:10 PM",
-      title: "Inaugural Address by Chief Guest - Prof. Vinod K. Paul",
-      duration: "20 min",
-      venue: "Auditorium",
-    },
-    {
-      time: "03:10 - 03:20 PM",
-      title: "Award Felicitation Ceremony",
-      duration: "10 min",
-      venue: "Auditorium",
-    },
-    {
-      time: "03:20 - 03:25 PM",
-      title: "Vote of Thanks - Prof. Sanjay K. Bhadada (Co-Convener)",
-      duration: "5 min",
-      venue: "Auditorium",
-    },
-    {
-      time: "03:25 - 04:05 PM",
-      title:
-        "C.P. Sharma Distinguished Awardee: Prof. Joachim Kohn (Rutgers University, USA)",
-      duration: "40 min",
-      venue: "Auditorium",
-    },
-    {
-      time: "04:05 - 04:20 PM",
-      title: "High-Tea",
-      duration: "15 min",
-      venue: "Auditorium Foyer",
-    },
-    {
-      time: "04:20 - 05:20 PM",
-      title: "Plenary Sessions (3 Sessions)",
-      duration: "60 min",
-      venue: "Auditorium",
-    },
-    {
-      time: "05:20 - 06:20 PM",
-      title: "Panel Discussion Sessions",
-      duration: "60 min",
-      venue: "Auditorium",
-    },
-    {
-      time: "06:20 - 08:30 PM",
-      title: "Cultural Events - Sadho Band Live Performance",
-      duration: "130 min",
-      venue: "Auditorium",
-    },
-    {
-      time: "08:30 - 10:00 PM",
-      title: "Dinner",
-      duration: "90 min",
-      venue: "Rose Garden",
-    },
-  ];
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -590,14 +402,13 @@ export default function ConferenceSchedule() {
       <div className=" text-black py-8 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <h1 className="text-4xl font-bold mb-2">
-            <span className="text-red-500">Bio</span>-मंथन 2025
+            <span className="text-red-500">METRIX</span> 7.0i
           </h1>
           <p className="text-gray-700">
-            40th International Conference on Biomaterials, Biomechanics, Medical
-            Device & Healthcare
+            Annual Conference
           </p>
           <p className="text-gray-700 mt-2">
-            📍 IIT Ropar • December 4-7, 2025
+            📍 IIT Ropar • December 3-5, 2026
           </p>
         </div>
       </div>
@@ -606,9 +417,6 @@ export default function ConferenceSchedule() {
       <div className="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
         {/* Tab Navigation */}
         <TabsList>
-          <TabsTrigger value="schedule" isActive={activeTab === "schedule"}>
-            Schedule D1
-          </TabsTrigger>
           <TabsTrigger value="day1" isActive={activeTab === "day1"}>
             Day 1
           </TabsTrigger>
@@ -617,9 +425,6 @@ export default function ConferenceSchedule() {
           </TabsTrigger>
           <TabsTrigger value="day3" isActive={activeTab === "day3"}>
             Day 3
-          </TabsTrigger>
-          <TabsTrigger value="day4" isActive={activeTab === "day4"}>
-            Day 4
           </TabsTrigger>
         </TabsList>
 
@@ -631,7 +436,7 @@ export default function ConferenceSchedule() {
               <CardHeader>
                 <CardTitle>Conference Day 1</CardTitle>
                 <CardDescription>Thursday, December 4, 2025</CardDescription>
-                <a target="_blank" className="text-blue-600 text-sm underline" href="https://drive.google.com/file/d/1nTeT4l2Bi7ZjroE_l6wio1ntCSBvBEZm/view">Schedule-Day 1</a>
+                <a target="_blank" className="text-blue-600 text-sm underline" href="">Schedule-Day 1</a>
               </CardHeader>
               <CardContent className="max-h-[600px] overflow-y-auto">
                 {scheduleDay1.map((session, idx) =>
@@ -647,7 +452,7 @@ export default function ConferenceSchedule() {
               <CardHeader>
                 <CardTitle>Conference Day 2</CardTitle>
                 <CardDescription>Friday, December 5, 2025</CardDescription>
-                <a target="_blank" className="text-blue-600 text-sm underline" href="https://drive.google.com/file/d/1vhtqHnmvF_NlfUritTsxJUqfHNNF4qXp/view">Schedule-Day 2</a>
+                <a target="_blank" className="text-blue-600 text-sm underline" href="">Schedule-Day 2</a>
               </CardHeader>
               <CardContent className="max-h-[600px] overflow-y-auto">
                 {scheduleDay2.map((session, idx) =>
@@ -656,14 +461,14 @@ export default function ConferenceSchedule() {
               </CardContent>
             </Card>
           </TabsContent>
-        
+
           {/* Day 3 Tab */}
           <TabsContent value="day3">
             <Card>
               <CardHeader>
                 <CardTitle>Conference Day 3</CardTitle>
                 <CardDescription>Saturday, December 6, 2025</CardDescription>
-                <a target="_blank" className="text-blue-600 text-sm underline" href="https://drive.google.com/file/d/13FrQ1RRA1V86rxajH1eTA8Fe4dOy5hkT/view">Schedule-Day 3</a>
+                <a target="_blank" className="text-blue-600 text-sm underline" href="">Schedule-Day 3</a>
               </CardHeader>
               <CardContent className="max-h-[600px] overflow-y-auto">
                 {scheduleDay3.map((session, idx) =>
@@ -673,63 +478,6 @@ export default function ConferenceSchedule() {
             </Card>
           </TabsContent>
 
-          {/* Day 4 Tab */}
-          <TabsContent value="day4">
-            <Card>
-              <CardHeader>
-                <CardTitle>Conference Day 4</CardTitle>
-                <CardDescription>Sunday, December 7, 2025</CardDescription>
-                <a target="_blank" className="text-blue-600 text-sm underline" href="https://drive.google.com/file/d/1lgV1S3gaTqK4xKxvQM1cXyJIq-NLxNQT/view">Schedule-Day 4</a>
-              </CardHeader>
-              <CardContent className="max-h-[600px] overflow-y-auto">
-                {scheduleDay4.map((session, idx) =>
-                  renderSession(session, idx)
-                )}
-              </CardContent>
-            </Card>
-          </TabsContent>
-
-          {/* Detailed Schedule Day 1 Tab */}
-          <TabsContent value="schedule">
-            <Card>
-              <CardHeader>
-                <CardTitle>
-                  Minute-to-Minute Inaugural Ceremony Schedule
-                </CardTitle>
-                <CardDescription>
-                  Thursday, December 4, 2025 | 1:45 PM - 10:00 PM
-                </CardDescription>
-                <a target="_blank" className="text-blue-600 text-sm underline" href="https://drive.google.com/file/d/17BHS7pcbEeip38OyvBq47MBJVtwiKGRF/view">Open Full Schedule Day's Wise</a>
-              </CardHeader>
-              <CardContent className="max-h-[600px] overflow-y-auto">
-                <div className="space-y-3">
-                  {scheduleDetailDay1.map((item, idx) => (
-                    <div
-                      key={idx}
-                      className="bg-gray-50 p-4 rounded-lg border border-gray-200"
-                    >
-                      <div className="flex items-start justify-between">
-                        <div className="flex-1">
-                          <p className="text-sm font-bold text-red-600">
-                            {item.time}
-                          </p>
-                          <h4 className="font-semibold text-gray-900 mt-1">
-                            {item.title}
-                          </h4>
-                          <p className="text-xs text-gray-500 mt-1">
-                            Duration: {item.duration}
-                          </p>
-                          <p className="text-xs text-gray-600 mt-1">
-                            Location: {item.venue}
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
-          </TabsContent>
         </Tabs>
 
         {/* Conference Info Cards */}
@@ -747,7 +495,7 @@ export default function ConferenceSchedule() {
               <CardTitle className="text-lg">Dates</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-gray-700">December 4-7, 2025</p>
+              <p className="text-gray-700">December 3-5, 2026</p>
             </CardContent>
           </Card>
           <Card>
@@ -756,7 +504,7 @@ export default function ConferenceSchedule() {
             </CardHeader>
             <CardContent>
               <p className="text-gray-700">
-                Biomaterials & AI-Healthcare Innovation
+                ????????????????
               </p>
             </CardContent>
           </Card>

@@ -1,7 +1,10 @@
 export default function Contact() {
   return (
     <>
-      <div className="min-h-screen">
+      <div className="h-screen flex justify-center items-center text-3xl text-center font-semibold">
+        <span className="text-red-600 pr-2">To</span> Be Announced....
+      </div>
+      {/* <div className="min-h-screen">
         <div className="text-4xl lg:text-5xl font-serif flex justify-center pt-16">
           <span className="text-red-600">Con</span>tact US
         </div>
@@ -35,7 +38,7 @@ export default function Contact() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
