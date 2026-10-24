@@ -132,7 +132,7 @@ export default function Hero() {
       <div className="absolute bg-black/60 inset-0  bg-[length:50px_50px] opacity-70"></div>
 
       {/* Main Content */}
-      <div className="relative z-10 px-6 lg:px-20 py-20 mx-auto w-full">
+      <div className="relative z-10 px-6 pt-20 lg:px-20 lg:pt-0 mx-auto w-full">
         {/* Badge */}
         <div className="mb-8 inline-flex items-center gap-2 bg-white/5 backdrop-blur-md border border-white/10 rounded-full px-4 py-2">
           <Zap size={16} className="text-red-600" />
@@ -147,7 +147,7 @@ export default function Hero() {
           <div className="space-y-8">
             {/* Title */}
             <div className="space-y-4">
-              <h1 className="text-6xl lg:text-4xl font-serif font-bold text-white leading-tight">
+              <h1 className="text-2xl lg:text-4xl font-serif font-bold text-white leading-tight">
                 Mechanical Engineering Tech Research Innovation & Exchange
                 <span className="block ">
                   2026
