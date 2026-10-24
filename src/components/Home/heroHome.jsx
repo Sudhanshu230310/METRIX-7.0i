@@ -132,7 +132,7 @@ export default function Hero() {
       <div className="absolute bg-black/60 inset-0  bg-[length:50px_50px] opacity-70"></div>
 
       {/* Main Content */}
-      <div className="relative z-10 px-6 pt-20 lg:px-20 lg:pt-0 mx-auto w-full">
+      <div className="relative z-10 px-6 py-20 lg:px-20 lg:pt-0 mx-auto w-full">
         {/* Badge */}
         <div className="mb-8 inline-flex items-center gap-2 bg-white/5 backdrop-blur-md border border-white/10 rounded-full px-4 py-2">
           <Zap size={16} className="text-red-600" />
@@ -153,7 +153,7 @@ export default function Hero() {
                   2026
                 </span>
               </h1>
-              <p className="text-lg text-white/70 leading-relaxed font-light">
+              <p className=" text-md lg:text-lg text-white/70 leading-relaxed font-light">
                 Join industry leaders, innovators, and visionaries for five days
                 of inspiring talks, hands-on workshops, and unparalleled
                 networking opportunities.
