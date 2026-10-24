@@ -224,26 +224,10 @@ export function Navbar() {
                 </MenuItem>
                 <MenuItem>
                   <a
-                    href="/me&bme"
+                    href="/me"
                     className="block px-4 py-2  hover:text-red-600 transition-all hover:scale-105 rounded-md"
                   >
-                    ME & BME
-                  </a>
-                </MenuItem>
-                <MenuItem>
-                  <a
-                    href="/sbaoi"
-                    className="block px-4 py-2  hover:text-red-600 transition-all hover:scale-105 rounded-md"
-                  >
-                    SBAOI
-                  </a>
-                </MenuItem>
-                <MenuItem>
-                  <a
-                    href="/stermi"
-                    className="block px-4 py-2  hover:text-red-600 transition-all hover:scale-105 rounded-md"
-                  >
-                    STERMI
+                    ME
                   </a>
                 </MenuItem>
               </div>
